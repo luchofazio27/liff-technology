@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Liff Technology — Automatización avanzada para empresas y hogares</title>
+<meta name="description" content="Software a medida, estrategia IT y automatización avanzada para empresas y espacios residenciales. Solicitá tu diagnóstico gratuito.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <nav class="nav">
+    <div class="logo"><span class="dot"></span>LIFF<span style="color:var(--blueprint)">.</span>TECHNOLOGY</div>
+    <div class="nav-links" id="navLinks">
+      <a href="#interes">Servicios</a>
+      <a href="#para-quien">Para quién</a>
+      <a href="#beneficios">Beneficios</a>
+      <a href="#contacto">Contacto</a>
+    </div>
+    <a href="#contacto" class="nav-cta">Solicitar diagnóstico →</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+
+<!-- ================= HERO — ATENCIÓN ================= -->
+<section class="hero grid-bg">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <span class="eyebrow">Ingeniería de automatización · Software a medida</span>
+        <h1>Tu espacio, listo para <em>pensar y actuar solo.</em></h1>
+        <p class="lead">Liff Technology diseña software a medida, estrategia IT y sistemas de automatización avanzada que conectan cada rincón de tu empresa o tu hogar en un solo sistema inteligente — eficiente, seguro y siempre bajo control.</p>
+        <div class="cta-row">
+          <a href="#contacto" class="btn-primary">Solicitar diagnóstico gratuito</a>
+          <a href="#interes" class="btn-secondary">Ver cómo funciona</a>
+        </div>
+      </div>
+
+      <div class="schematic">
+        <div class="schematic-head">
+          <span>PANEL_LIFF // vista general del sistema</span>
+          <span class="status"><span class="d"></span>ONLINE</span>
+        </div>
+        <svg viewBox="0 0 460 340" xmlns="http://www.w3.org/2000/svg">
+          <!-- rooms -->
+          <rect x="14" y="14" width="200" height="130" fill="none" stroke="#1c4f95" stroke-width="1.4" rx="2"/>
+          <text x="26" y="34" class="zone-label">ZONA 01 — OFICINA / SALA</text>
+
+          <rect x="228" y="14" width="218" height="130" fill="none" stroke="#1c4f95" stroke-width="1.4" rx="2"/>
+          <text x="240" y="34" class="zone-label">ZONA 02 — CLIMATIZACIÓN</text>
+
+          <rect x="14" y="158" width="200" height="168" fill="none" stroke="#1c4f95" stroke-width="1.4" rx="2"/>
+          <text x="26" y="178" class="zone-label">ZONA 03 — SEGURIDAD / ACCESOS</text>
+
+          <rect x="228" y="158" width="218" height="168" fill="none" stroke="#1c4f95" stroke-width="1.4" rx="2"/>
+          <text x="240" y="178" class="zone-label">ZONA 04 — ENERGÍA / PROCESOS</text>
+
+          <!-- connecting lines animated -->
+          <g fill="none" stroke="#bd7a34" stroke-width="1.6" stroke-dasharray="4 5">
+            <line x1="214" y1="79" x2="228" y2="79">
+              <animate attributeName="stroke-dashoffset" from="0" to="-18" dur="1.4s" repeatCount="indefinite"/>
+            </line>
+            <line x1="114" y1="144" x2="114" y2="158">
+              <animate attributeName="stroke-dashoffset" from="0" to="-18" dur="1.4s" repeatCount="indefinite"/>
+            </line>
+            <line x1="337" y1="144" x2="337" y2="158">
+              <animate attributeName="stroke-dashoffset" from="0" to="-18" dur="1.4s" repeatCount="indefinite"/>
+            </line>
+            <line x1="214" y1="242" x2="228" y2="242">
+              <animate attributeName="stroke-dashoffset" from="0" to="-18" dur="1.4s" repeatCount="indefinite"/>
+            </line>
+          </g>
+
+          <!-- node dots pulsing -->
+          <circle cx="114" cy="79" r="4.5" fill="#37a066">
+            <animate attributeName="opacity" values="1;0.35;1" dur="2.2s" repeatCount="indefinite"/>
+          </circle>
+          <circle cx="337" cy="79" r="4.5" fill="#37a066">
+            <animate attributeName="opacity" values="0.35;1;0.35" dur="2.2s" repeatCount="indefinite"/>
+          </circle>
+          <circle cx="114" cy="242" r="4.5" fill="#37a066">
+            <animate attributeName="opacity" values="1;0.35;1" dur="2.6s" repeatCount="indefinite"/>
+          </circle>
+          <circle cx="337" cy="242" r="4.5" fill="#37a066">
+            <animate attributeName="opacity" values="0.35;1;0.35" dur="1.9s" repeatCount="indefinite"/>
+          </circle>
+
+          <text x="26" y="60" class="mono" font-family="IBM Plex Mono" font-size="10" fill="#3c4a63">luces · escenas</text>
+          <text x="240" y="60" class="mono" font-family="IBM Plex Mono" font-size="10" fill="#3c4a63">temp · humedad</text>
+          <text x="26" y="204" class="mono" font-family="IBM Plex Mono" font-size="10" fill="#3c4a63">cámaras · accesos</text>
+          <text x="240" y="204" class="mono" font-family="IBM Plex Mono" font-size="10" fill="#3c4a63">consumo · alertas</text>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= INTERÉS ================= -->
+<section id="interes">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">El problema</span>
+      <h2>¿Tu espacio todavía depende de que alguien lo controle a mano?</h2>
+      <p>La mayoría de las empresas y hogares operan con sistemas que no se hablan entre sí: la iluminación por un lado, la climatización por otro, la seguridad en una app distinta y el consumo energético sin monitoreo real. El resultado: tiempo perdido, gasto innecesario y decisiones de IT tomadas sin estrategia.</p>
+    </div>
+
+    <div class="problems">
+      <div class="problem">
+        <span class="tag">FRICCIÓN OPERATIVA</span>
+        <h3>Sistemas que no se integran</h3>
+        <p>Cada dispositivo o proveedor funciona por su cuenta, sin un panel único que centralice el control.</p>
+      </div>
+      <div class="problem">
+        <span class="tag">COSTO OCULTO</span>
+        <h3>Consumo energético sin control</h3>
+        <p>Sin monitoreo en tiempo real es imposible detectar dónde se está desperdiciando energía — y dinero.</p>
+      </div>
+      <div class="problem">
+        <span class="tag">RIESGO IT</span>
+        <h3>Infraestructura sin estrategia</h3>
+        <p>Decisiones tecnológicas tomadas por urgencia, no por planificación, dejan huecos de seguridad y escalabilidad.</p>
+      </div>
+    </div>
+
+    <div id="para-quien" class="audience">
+      <div class="zone-card">
+        <span class="zone-tag">PARA EMPRESAS</span>
+        <h3>Oficinas, plantas y locales comerciales</h3>
+        <ul>
+          <li>Automatización de procesos operativos</li>
+          <li>Infraestructura IT sólida y escalable</li>
+          <li>Ciberseguridad y continuidad de negocio</li>
+          <li>Integración de sistemas y proveedores</li>
+        </ul>
+      </div>
+      <div class="zone-card">
+        <span class="zone-tag">PARA HOGARES</span>
+        <h3>Espacios residenciales inteligentes</h3>
+        <ul>
+          <li>Iluminación y climatización automatizadas</li>
+          <li>Seguridad y control de accesos remoto</li>
+          <li>Escenas y rutinas personalizadas</li>
+          <li>Todo desde una sola aplicación</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= DESEO ================= -->
+<div class="features-band" id="beneficios">
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">La solución</span>
+        <h2>Un sistema, todos tus procesos bajo control</h2>
+        <p>Combinamos desarrollo de software, estrategia IT y automatización en una sola solución diseñada específicamente para tu empresa o tu hogar — no un paquete genérico.</p>
+      </div>
+
+      <div class="feature-grid">
+        <div class="feature">
+          <span class="code mono">SYS.01 — SOFTWARE</span>
+          <h3>Desarrollo a medida</h3>
+          <p>Aplicaciones y paneles de control diseñados desde cero para tu operación, no plantillas adaptadas.</p>
+        </div>
+        <div class="feature">
+          <span class="code mono">SYS.02 — AUTOMATIZACIÓN</span>
+          <h3>Automatización avanzada</h3>
+          <p>Iluminación, climatización, accesos y procesos que se ejecutan solos, según reglas y escenas que vos definís.</p>
+        </div>
+        <div class="feature">
+          <span class="code mono">SYS.03 — ESTRATEGIA IT</span>
+          <h3>Infraestructura pensada a futuro</h3>
+          <p>Arquitectura, seguridad y escalabilidad planificadas por especialistas, no resueltas a último momento.</p>
+        </div>
+        <div class="feature">
+          <span class="code mono">SYS.04 — INTEGRACIÓN</span>
+          <h3>Un solo panel de control</h3>
+          <p>Todos tus sistemas y dispositivos conectados y visibles desde un único lugar, sin apps sueltas.</p>
+        </div>
+        <div class="feature">
+          <span class="code mono">SYS.05 — EFICIENCIA</span>
+          <h3>Monitoreo energético en vivo</h3>
+          <p>Visibilidad en tiempo real del consumo para detectar desperdicios y optimizar costos.</p>
+        </div>
+        <div class="feature">
+          <span class="code mono">SYS.06 — ACOMPAÑAMIENTO</span>
+          <h3>Soporte continuo</h3>
+          <p>No entregamos un sistema y desaparecemos: seguimos optimizando y acompañando cada etapa.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ================= DIFERENCIALES ================= -->
+<div class="strip">
+  <div class="wrap">
+    <div class="strip-item">
+      <span class="mark mono">01</span>
+      <p>Diseño end-to-end: relevamiento, desarrollo, instalación y puesta en marcha.</p>
+    </div>
+    <div class="strip-item">
+      <span class="mark mono">02</span>
+      <p>Soluciones adaptadas a empresas y a espacios residenciales por igual.</p>
+    </div>
+    <div class="strip-item">
+      <span class="mark mono">03</span>
+      <p>Un equipo que combina software, IT y automatización bajo un mismo criterio.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ================= ACCIÓN ================= -->
+<section class="final-cta" id="contacto">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Empecemos</span>
+      <h2>Dejá de administrar tu espacio a mano.</h2>
+      <p class="lead">Contanos cómo funciona hoy tu empresa o tu hogar y te devolvemos un diagnóstico claro de qué automatizar primero — sin costo ni compromiso.</p>
+      <a href="#contactForm" class="btn-primary">Agendar diagnóstico gratuito →</a>
+    </div>
+
+    <div class="form-card">
+      <span class="mono">Formulario de contacto</span>
+      <form id="contactForm" novalidate>
+        <div class="field" id="nombreField">
+          <label for="nombre">Nombre y apellido</label>
+          <input id="nombre" name="nombre" type="text" placeholder="Tu nombre" required>
+          <span class="field-error"></span>
+        </div>
+        <div class="field" id="emailField">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="tu@email.com" required>
+          <span class="field-error"></span>
+        </div>
+        <div class="field">
+          <label for="tipo">Tipo de espacio</label>
+          <select id="tipo" name="tipo">
+            <option>Empresa / oficina</option>
+            <option>Planta o local comercial</option>
+            <option>Hogar</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="mensaje">Contanos brevemente tu proyecto</label>
+          <textarea id="mensaje" name="mensaje" placeholder="Ej: quiero automatizar iluminación y seguridad de mi oficina..."></textarea>
+        </div>
+        <button type="submit" class="form-submit" id="formSubmit">Enviar solicitud</button>
+        <div class="form-feedback" id="formFeedback"></div>
+        <p class="form-note">Te respondemos en menos de 24hs hábiles.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="logo"><span class="dot"></span>LIFF<span style="color:var(--blueprint)">.</span>TECHNOLOGY</div>
+    <div class="foot-links">
+      <a href="#interes">Servicios</a>
+      <a href="#para-quien">Para quién</a>
+      <a href="#beneficios">Beneficios</a>
+      <a href="#contacto">Contacto</a>
+    </div>
+    <span class="copy">© <span id="currentYear">2026</span> LIFF TECHNOLOGY — AUTOMATIZACIÓN &amp; SOFTWARE A MEDIDA</span>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Volver arriba">↑</button>
+
+<script src="script.js"></script>
+</body>
+</html>

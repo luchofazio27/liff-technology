@@ -7,22 +7,19 @@
 document.addEventListener('DOMContentLoaded', function () {
 
   /* ------------------------------------------------------------------
-     1. MENÚ MOBILE (hamburguesa)
+     1. MENÚ MOBILE
+     Con Bootstrap, el navbar-toggler ya abre/cierra el menú solo
+     (data-bs-toggle="collapse"). Acá solo cerramos el menú colapsado
+     al hacer click en un link, para que no quede abierto tras navegar.
   ------------------------------------------------------------------ */
-  const menuToggle = document.getElementById('menuToggle');
-  const navLinks = document.getElementById('navLinks');
-
-  if (menuToggle && navLinks) {
-    menuToggle.addEventListener('click', function () {
-      menuToggle.classList.toggle('open');
-      navLinks.classList.toggle('open');
-    });
-
-    // cerrar el menú al hacer click en un link
-    navLinks.querySelectorAll('a').forEach(function (link) {
+  const navLiff = document.getElementById('navLiff');
+  if (navLiff && window.bootstrap) {
+    navLiff.querySelectorAll('a').forEach(function (link) {
       link.addEventListener('click', function () {
-        menuToggle.classList.remove('open');
-        navLinks.classList.remove('open');
+        const collapseInstance = bootstrap.Collapse.getInstance(navLiff);
+        if (collapseInstance && navLiff.classList.contains('show')) {
+          collapseInstance.hide();
+        }
       });
     });
   }
@@ -30,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
   /* ------------------------------------------------------------------
      2. HEADER: sombra al hacer scroll
   ------------------------------------------------------------------ */
-  const header = document.querySelector('header');
+  const header = document.querySelector('.navbar-liff');
   if (header) {
     window.addEventListener('scroll', function () {
       if (window.scrollY > 12) {
@@ -80,13 +77,20 @@ document.addEventListener('DOMContentLoaded', function () {
   const submitBtn = document.getElementById('formSubmit');
 
   function showFieldError(fieldWrapper, message) {
-    fieldWrapper.classList.add('invalid');
+    const inputEl = fieldWrapper.querySelector('.form-control, .form-select');
     const errorEl = fieldWrapper.querySelector('.field-error');
-    if (errorEl) errorEl.textContent = message;
+    if (inputEl) inputEl.classList.add('is-invalid-liff');
+    if (errorEl) {
+      errorEl.textContent = message;
+      errorEl.classList.add('show');
+    }
   }
 
   function clearFieldError(fieldWrapper) {
-    fieldWrapper.classList.remove('invalid');
+    const inputEl = fieldWrapper.querySelector('.form-control, .form-select');
+    const errorEl = fieldWrapper.querySelector('.field-error');
+    if (inputEl) inputEl.classList.remove('is-invalid-liff');
+    if (errorEl) errorEl.classList.remove('show');
   }
 
   function showFeedback(message, type) {
